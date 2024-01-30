@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Your Page Title</title>
+</head>
+
+<body style="width: 100%; height: 100%; margin: 0; padding: 0;">
+  <div class="Slide1693">
+    <img class="HeaderBg1"src="img/header-bg.jpg" />
+    <a style="text-decoration:none" href="index.html"  class="Home">Home</a>
+    <a style="text-decoration:none" href="report.html"  class="Report">Report</a>
+    <a style="text-decoration:none" href="posts.html"  class="Posts">Posts</a>
+    <a style="text-decoration:none" href="about.html"  class="About">About</a>
+    <div class="Group1">
+      <a style="text-decoration:none" href="index.html" class="SuratBintang">Surat Bintang</a>
+      <img class="Star1" src="img/star.png" />
+    </div>
+    <div class="ReportBoxGroup" 
+    style="width: 718px; 
+    height: 616px; 
+    left: 633px; 
+    top: 232px; 
+    position: absolute">
+      <div class="SexualAbuseReportBox" style="width: 718px; height: 616px; left: 0px; top: 0px; position: absolute; background: linear-gradient(138deg, #FDB927 0%, rgba(253, 185, 39, 0.55) 100%); box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25); border-radius: 40px; backdrop-filter: blur(4px)"></div>
+      <form action="submit_report.php" method="post">
+<div class="ReportBox" style="width: 567px; height: 129px; left: 75px; top: 313px; position: absolute; background: #D9D9D9; border-radius: 40px; display: flex; align-items: center; justify-content: center;">
+  <textarea id="reportInput" name="report" oninput="handleReportInput()" style="width: 100%; height: 100%; border: none; padding: 10px; box-sizing: border-box; background: #D9D9D9; font-size: 24px; border-radius: 40px; font-family: Satoshi; font-weight: 700; text-align: center;"></textarea>
+</div>
+<div id="writeReport" class="WriteAReport" style="width: 195px; height: 34px; left: 88px; top: 353px; position: absolute; text-align: center; color: rgba(0, 0, 0, 0.50); font-size: 24px; font-family: Satoshi; font-weight: 700; word-wrap: break-word; display: flex; align-items: center; justify-content: center;">Write a report</div>
+      <div class="EmailBox" style="width: 567px; height: 58px; left: 75px; top: 240px; position: absolute; background: #D9D9D9; border-radius: 40px">
+        <input type="text" id="emailInput" name="email" oninput="deleteLabel()" style="width: 100%; height: 100%; border: none; padding: 10px; box-sizing: border-box; background: #D9D9D9; font-size: 24px; border-radius: 40px; text-align: center; font-size: 24px; font-family: Satoshi; font-weight: 700"></div>
+        <div id="emailLabel" style="width: 116px; height: 36px; left: 90px; top: 251px; position: absolute; text-align: center; color: rgba(0, 0, 0, 0.50); font-size: 24px; font-family: Satoshi; font-weight: 700; word-wrap: break-word">
+          <label for="emailInput">Email</label>
+      </div>
+      <div class="SexualAbuseReport" style="width: 597px; height: 82px; left: 60px; top: 72px; position: absolute; text-align: center; color: #553E44; font-size: 48px; font-family: Satoshi; font-weight: 700; word-wrap: break-word">SEXUAL ABUSE REPORT</div>
+      <div class="NameBox" style="width: 567px; height: 59px; left: 75px; top: 167px; position: absolute; background: #D9D9D9; border-radius: 40px">
+        <input type="text" id="nameInput" name="name" oninput="updateLabel()" style="width: 100%; height: 100%; border: none; padding: 10px; box-sizing: border-box;  background:#D9D9D9; font-size: 24px; border-radius: 40px; text-align: center; font-size: 24px; font-family: Satoshi; font-weight: 700"></div>
+    <div id="nameLabel" class="Name" style="width: 116px; height: 36px; left: 90px; top: 178px; position: absolute; text-align: center; color: rgba(0, 0, 0, 0.50); font-size: 24px; font-family: Satoshi; font-weight: 700; word-wrap: break-word">
+      <label for="nameInput">Name</label>
+    </div>
+    
+    <div class="SendButton" style="width: 300px; height: 74px; left: 206px; top: 479px; position: absolute; background: linear-gradient(95deg, rgba(85, 62, 68, 0.81) 0%, rgba(85, 62, 68, 0.81) 100%); box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25); border-radius: 40px; backdrop-filter: blur(4px)">
+      <button type="submit" class="Send" style="width: 100%; height: 100%; border: none; background: transparent; color: white; font-size: 24px; font-family: Satoshi; font-weight: 700;">Send</button>
+  </div>
+  </form>
+    <div class="LoginButton" style="width: 213.95px; height: 63px; left: 1537px; top: 73px; position: absolute">
+      <div class="Rectangle1" style="width: 213.95px; height: 63px; left: 0px; top: 0px; position: absolute; background: linear-gradient(96deg, #FDB927 0%, rgba(253, 185, 39, 0.72) 100%); border-radius: 40px"></div>
+      <div class="Login" style="width: 95.71px; height: 28.78px; left: 58.72px; top: 14px; position: absolute; text-align: center; color: #553E44; font-size: 28px; font-family: Satoshi; font-weight: 700; word-wrap: break-word">Login</div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
